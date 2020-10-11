@@ -29,12 +29,17 @@
              </h4>
 
              <div>
-                 <h4>
-                    🔍Search
-                 </h4>
-                 <h4>
-                    🔔
-                 </h4>
+                 
+                <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                    <input type="text" placeholder="Search.." name="search2">
+                    
+                </form>
+                <a href="#" class="notification">
+                <span>🔔</span>
+                <span class="badge">3</span>
+                </a>
+
+                 
                  <h4>
                      <a href="https://www.netflix.com/in/"> SignedIn </a>
                  </h4>
@@ -157,6 +162,67 @@
                     flex-flow: column wrap;
                 }
              }
+             body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 160%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 40%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.notification {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification:hover {
+  background: yellow;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
         
      </style>
 
